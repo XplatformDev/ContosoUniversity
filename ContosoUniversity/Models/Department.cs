@@ -22,7 +22,15 @@ namespace ContosoUniversity.Models
         [Display(Name = "Start Date")]
         public DateTime StartDate { get; set; }
 
+        [Display(Name = "Administrator")]
         public int? InstructorID { get; set; }
+
+        /*
+         * Timestamp attribute specifies that this coloumn will be included in the Where clause of Update and Delete
+         * commands sent to the database.
+         */
+        [Timestamp]
+        public byte[] RowVersion { get; set; } // type for RowVersion is byte
 
         public virtual Instructor Administrator { get; set; }
         public virtual ICollection<Course> Courses { get; set; }

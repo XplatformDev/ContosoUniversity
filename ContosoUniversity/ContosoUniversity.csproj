@@ -185,12 +185,21 @@
     <Compile Include="Migrations\201412162007264_ComplexDataModel.Designer.cs">
       <DependentUpon>201412162007264_ComplexDataModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201412170503266_RowVersion.cs" />
+    <Compile Include="Migrations\201412170503266_RowVersion.Designer.cs">
+      <DependentUpon>201412170503266_RowVersion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201412170531535_Inheritance.cs" />
+    <Compile Include="Migrations\201412170531535_Inheritance.Designer.cs">
+      <DependentUpon>201412170531535_Inheritance.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Course.cs" />
     <Compile Include="Models\Department.cs" />
     <Compile Include="Models\Enrollment.cs" />
     <Compile Include="Models\Instructor.cs" />
     <Compile Include="Models\OfficeAssignment.cs" />
+    <Compile Include="Models\Person.cs" />
     <Compile Include="Models\Student.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\AssignedCourseData.cs" />
@@ -280,6 +289,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201412162007264_ComplexDataModel.resx">
       <DependentUpon>201412162007264_ComplexDataModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201412170503266_RowVersion.resx">
+      <DependentUpon>201412170503266_RowVersion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201412170531535_Inheritance.resx">
+      <DependentUpon>201412170531535_Inheritance.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
